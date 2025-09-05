@@ -21,3 +21,34 @@ a:hover{
     cursor: pointer;
     border-radius: 4px;
 }
+
+.carousel {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 20px solid transparent;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ctext x='0' y='15' font-size='20' fill='red'%3E❤%3C/text%3E%3C/svg%3E") 30 round;
+    border-radius: 20px;
+    position: relative;
+
+    /* centraliza apenas o carrossel */
+    margin: 2rem auto;
+}
+  
+  .carousel-track {
+    display: flex;
+    width: 400%; /* 4 imagens */
+    animation: slide 12s steps(4) infinite;
+  }
+  
+  .carousel-track img {
+    width: 25%; /* cada imagem ocupa 1/4 do track */
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
