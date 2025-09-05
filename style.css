@@ -45,6 +45,7 @@ a:hover{
     width: 25%; /* cada imagem ocupa 1/4 do track */
     height: 300px;
     object-fit: cover;
+    border-radius: 50px;
   }
   
   @keyframes slide {
