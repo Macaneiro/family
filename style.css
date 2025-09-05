@@ -1,0 +1,23 @@
+body{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, rgb(95, 16, 16), rgb(139, 139, 39),  rgb(9, 9, 107));
+    color: white;
+    font-size: 1.5rem;
+}
+
+a{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(0, 155, 0, 0.4);
+    padding: 8px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
